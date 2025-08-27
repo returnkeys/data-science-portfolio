@@ -1,12 +1,12 @@
 ---
 layout: default
-title: "Sphere – Seasonal Forecast Evaluation Pipeline"
+title: "Sphere – Prediction Systems Evaluation Pipeline"
 ---
 
-# 🌍 Seasonal Forecast Evaluation Pipeline
+# 🌍 Seasonal Forecast Models Evaluation Pipeline
 
 **Author:** Esmaeil Pourjavad  
-**Domain:** Data Science | Predictive Modeling | MLOps | Climate Data  
+**Domain:** Data Science | Predictive Modeling | MLOps | Satellite Data  
 
 ---
 
@@ -46,12 +46,12 @@ providing **reproducible, automated, and scalable analytics** for decision-makin
 ---
 
 ### 3️⃣ Model Evaluation Framework
-- **Brier Skill Score (BSS)** – categorical probabilistic accuracy  
-- **CRPSS** – distribution accuracy  
-- **AUC (ROC)** – classification skill  
-- **ACC** – deterministic correlation  
+- **Brier Skill Score (BSS):** categorical probabilistic accuracy
+- **Continuous Ranked Probability Skill Score (CRPSS):** distribution accuracy
+- **Area Under the ROC Curve (AUC):** discrimination ability 
+- **Anomaly Correlation Coefficient (ACC):** deterministic forecast–observation correlation  
 
-Framework implemented in **Python (xarray, NumPy)** for multi-model benchmarking.  
+Framework implemented in **Python (xarray, NumPy), R** for multi-model benchmarking.  
 
 **Keywords:** benchmarking · probabilistic forecasting · automated validation  
 
@@ -73,6 +73,26 @@ Framework implemented in **Python (xarray, NumPy)** for multi-model benchmarking
 - **Tools:** CDO (Climate Data Operators), Slurm (HPC orchestration)  
 - **Data:** Seasonal forecasts (ECMWF, CMCC, DWD, MF, UKMO) + ERA5 reanalysis  
 - **Environment:** Linux HPC cluster, NetCDF workflows  
+
+---
+
+## 📊 Example Results
+Some outputs from the evaluation pipeline:
+
+| Metric | Example Output |
+|--------|----------------|
+| **BSS** | ![Spatial Map](results/bss_map.png) |
+| **CRPSS** | ![Heatmap](results/crpss_heatmap.png) |
+| **ACC** | ![Boxplot](results/acc_boxplot.png) |
+
+---
+
+## 📂 Code Snippets
+- [`data_preprocessing.py`](code/data_preprocessing.py) → harmonization & anomaly computation  
+- [`model_evaluation.py`](code/model_evaluation.py) → skill score calculations  
+- [`visualization.py`](code/visualization.py) → geospatial & statistical plots  
+
+*(Full pipeline code is maintained privately due to project restrictions; here are representative excerpts.)*
 
 ---
 
@@ -101,7 +121,7 @@ Applicable beyond climate science → **insurance, finance, risk scoring, fraud/
 - **Dashboards** → stakeholder-friendly interfaces  
 - **Knowledge Transfer** → performance bulletins & training  
 
-**Keywords:** deployment pipelines · real-time inference · explainable AI  
+**Keywords:** deployment pipelines · real-time inference · stakeholder engagement
 
 ---
 
