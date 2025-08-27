@@ -79,10 +79,20 @@ Framework implemented in **Python (xarray, NumPy), R** for multi-model benchmark
 ## 📊 Example Results
 Some outputs from the evaluation pipeline:
 
+<p align="left">
+  <img src="results/spatial_map.png" alt="Spatial Map" width="400"/>
+  <br><em>Spatial Map</em>
+</p>
 
-![Spatial Map](results/spatial_map.png)
-![Heatmap](results/heatmap.png)
-![Boxplot](results/boxplot.png)
+<p align="left">
+  <img src="results/heatmap.png" alt="Heatmap" width="400"/>
+  <br><em>Heatmap</em>
+</p>
+
+<p align="left">
+  <img src="results/boxplot.png" alt="Boxplot" width="400"/>
+  <br><em>Boxplot</em>
+</p>
 
 ---
 

@@ -3,3 +3,10 @@ description: "Showcasing professional and self-driven projects in Data Science, 
 theme: jekyll-theme-hacker   
 url: "https://returnkeys.github.io"
 baseurl: "/data-science-portfolio"
+
+# Navigation menu
+nav:
+  - name: "Home"
+    link: /
+  - name: "Sphere Pipeline"
+    link: /projects/sphere-pipeline/
