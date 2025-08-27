@@ -79,16 +79,15 @@ Framework implemented in **Python (xarray, NumPy), R** for multi-model benchmark
 ## 📊 Example Results
 Some outputs from the evaluation pipeline:
 
-| Metric | Example Output |
-|--------|----------------|
-| **BSS** | ![Spatial Map](results/bss_map.png) |
-| **CRPSS** | ![Heatmap](results/crpss_heatmap.png) |
-| **ACC** | ![Boxplot](results/acc_boxplot.png) |
+
+![Spatial Map](results/spatial_map.png)
+![Heatmap](results/heatmap.png)
+![Boxplot](results/boxplot.png)
 
 ---
 
 ## 📂 Code Snippets
-- [`data_preprocessing.py`](code/data_preprocessing.py) → harmonization & anomaly computation  
+- [`data_preprocessing.sh`](code/data_preprocessing.sh) → harmonization & anomaly computation  
 - [`model_evaluation.py`](code/model_evaluation.py) → skill score calculations  
 - [`visualization.py`](code/visualization.py) → geospatial & statistical plots  
 
