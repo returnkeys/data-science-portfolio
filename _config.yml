@@ -1,7 +1,5 @@
-title: "Sphere – Seasonal Forecast Evaluation Pipeline"
-<<<<<<< HEAD
+title: "Data Science Portfolio – Esmaeil Pourjavad"
+description: "Showcasing professional and self-driven projects in Data Science, MLOps, and AI"
 theme: jekyll-theme-cayman
-
-=======
-theme: jekyll-theme-hacker
->>>>>>> c7cc3393344aadb1f159840c18f4e3b8b7da3c3a
+url: "https://returnkeys.github.io"
+baseurl: "/data-science-portfolio"
