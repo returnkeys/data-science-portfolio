@@ -11,16 +11,16 @@ This repository is my **data science portfolio**, showcasing projects and course
 To project contents you can click on the project names.
 
 - **projects/** → Professional & self-driven projects  
-  - [`sphere-pipeline`](https://returnkeys.github.io/data-science-portfolio/projects/sphere-pipeline/) → Seasonal Forecast Evaluation Pipeline (Sphere EU project)  
-  - `fraud-detection` → Fraud detection in financial transactions (Google Cloud ML)  
-  - `sql-practice` → SQL exercises & practice  
-  - `api-automation` → Automated API data pipelines  
-  - `ml-experiments` → Machine learning experiments  
+  - [sphere-pipeline](https://returnkeys.github.io/data-science-portfolio/projects/sphere-pipeline/) → Seasonal Forecast Evaluation Pipeline (Sphere EU project)  
+  - [fraud-detection](https://returnkeys.github.io/data-science-portfolio/projects/fraud-detection/) → Fraud detection in financial transactions (Google Cloud ML)  
+  - [sql-practice](https://returnkeys.github.io/data-science-portfolio/projects/sql-practice/) → SQL exercises & practice  
+  - [api-automation](https://returnkeys.github.io/data-science-portfolio/projects/api-automation/) → Automated API data pipelines  
+  - [ml-experiments](https://returnkeys.github.io/data-science-portfolio/projects/ml-experiments/) → Machine learning experiments  
 
 - **courses/** → Certifications & self-learning paths  
-  - `google-cloud-ml` → Google Cloud ML specialization (fraud detection)  
-  - `azure-ml` → Azure ML course labs & experiments  
-  - `mlops` → MLflow, DVC, model lifecycle management  
+  - [google-cloud-ml](https://returnkeys.github.io/data-science-portfolio/courses/google-cloud-ml/) → Google Cloud ML specialization (fraud detection)  
+  - [azure-ml](https://returnkeys.github.io/data-science-portfolio/courses/azure-ml/) → Azure ML course labs & experiments  
+  - [mlops](https://returnkeys.github.io/data-science-portfolio/courses/mlops/) → MLflow, DVC, model lifecycle management  
   - `sql-bolt` → SQLBolt structured lessons  
 
 - **assets/** → Diagrams, images, figures used in portfolio  
