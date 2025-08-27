@@ -8,8 +8,10 @@ This repository is my **data science portfolio**, showcasing projects and course
 
 ## 📂 Structure  
 
+To project contents you can click on the project names.
+
 - **projects/** → Professional & self-driven projects  
-  - `sphere-pipeline` → Seasonal Forecast Evaluation Pipeline (Sphere EU project)  
+  - [`sphere-pipeline`](https://returnkeys.github.io/data-science-portfolio/projects/sphere-pipeline/) → Seasonal Forecast Evaluation Pipeline (Sphere EU project)  
   - `fraud-detection` → Fraud detection in financial transactions (Google Cloud ML)  
   - `sql-practice` → SQL exercises & practice  
   - `api-automation` → Automated API data pipelines  
