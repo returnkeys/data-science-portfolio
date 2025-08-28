@@ -97,9 +97,9 @@ Some outputs from the evaluation pipeline:
 ---
 
 ## 📂 Code Snippets
-- [`data_preprocessing.sh`](code/data_preprocessing.sh) → harmonization & anomaly computation  
-- [`model_evaluation.py`](code/model_evaluation.py) → skill score calculations  
-- [`visualization.py`](code/visualization.py) → geospatial & statistical plots  
+- [Data Preprocessing (Bash)](https://github.com/returnkeys/data-science-portfolio/blob/main/projects/sphere-pipeline/codes/data_preprocessing.sh) → harmonization & anomaly computation  
+- [Model Evaluation (Python)](https://github.com/returnkeys/data-science-portfolio/blob/main/projects/sphere-pipeline/codes/model_evaluation.py) → skill score calculations  
+- [Visualization (Python)](https://github.com/returnkeys/data-science-portfolio/blob/main/projects/sphere-pipeline/codes/visualization.py) → geospatial & statistical plots  
 
 *(Full pipeline code is maintained privately due to project restrictions; here are representative excerpts.)*
 
