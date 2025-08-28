@@ -132,9 +132,3 @@ Applicable beyond climate science → **insurance, finance, risk scoring, fraud/
 
 **Keywords:** deployment pipelines · real-time inference · stakeholder engagement
 
----
-
-## 📬 Contact
-Interested in applications of **data science, predictive modeling, or MLOps pipelines** in climate, insurance, or finance?  
-📎 [LinkedIn](https://www.linkedin.com/in/esmaeil-pourjavad-091b861b3)  
-

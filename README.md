@@ -12,7 +12,7 @@ To project contents you can click on the project names.
 
 - **projects/** → Professional & self-driven projects  
   - [sphere-pipeline](https://returnkeys.github.io/data-science-portfolio/projects/sphere-pipeline/) → Seasonal Forecast Evaluation Pipeline (Sphere EU project)  
-  - [fraud-detection](https://returnkeys.github.io/data-science-portfolio/projects/fraud-detection/) → Fraud detection in financial transactions (Google Cloud ML)  
+  - [Fraud Detection (Google Cloud ML)](https://returnkeys.github.io/data-science-portfolio/projects/fraud-detection-ml/) → Financial transaction anomaly detection with BigQuery ML, TensorFlow, and explainable AI
   - [sql-practice](https://returnkeys.github.io/data-science-portfolio/projects/sql-practice/) → SQL exercises & practice  
   - [api-automation](https://returnkeys.github.io/data-science-portfolio/projects/api-automation/) → Automated API data pipelines  
   - [ml-experiments](https://returnkeys.github.io/data-science-portfolio/projects/ml-experiments/) → Machine learning experiments  
