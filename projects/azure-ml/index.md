@@ -1,7 +1,9 @@
 # ☁️ Azure Machine Learning — Practical Work
 
 I built, ran, and iterated complete ML workflows on Microsoft Azure using **Designer** and the **SDK v2**.  
-The focus is enterprise-style delivery: reproducible pipelines, model registry, deployment to online endpoints, and light monitoring.
+This work was developed as part of the **Microsoft Azure Machine Learning for Data Scientists** (Microsoft) learning track, which thoroughly covers the essentials from workspace setup to data assets, training pipelines, model registry, deployment to online endpoints, and light monitoring.  
+I extended the material with my own experiments on real datasets and additional MLOps practices.
+
 
 ---
 
@@ -24,9 +26,9 @@ I used three tabular datasets to exercise supervised and unsupervised workflows.
 Each dataset was registered as a **Data asset** and referenced across experiments.
 
 **Key factors**
-- **Automobile price** (regression): numeric `price` target; mixed numeric/categorical features  
-- **Diabetes** (classification): binary outcome; standard medical predictors  
-- **Penguins** (clustering): unlabeled data to validate segmentation with K-Means  
+- **Automobile price** (regression): numeric `price` target; mixed numeric/categorical features 
+- **Diabetes** (classification): binary outcome; standard medical predictors [source](https://raw.githubusercontent.com/MicrosoftDocs/ml-basics/refs/heads/master/data/diabetes.csv)
+- **Penguins** (clustering): unlabeled data to validate segmentation with K-Means [source](https://raw.githubusercontent.com/MicrosoftDocs/ml-basics/master/data/penguins.csv)  
 - Stored in `workspaceblobstore` under organized paths for pipeline reuse
 
 ---
