@@ -120,4 +120,7 @@ On success, the job registers a new model and—optionally after approval—upda
 
 ---
 
+# Screenshots
+- [Penguins clustering](/Users/esmaeilpourjavad/data_science_path/data-science-portfolio/projects/azure-ml/screenshots/data_penguin-pipeline.png)
+- [Diabetes Classification](/Users/esmaeilpourjavad/data_science_path/data-science-portfolio/projects/azure-ml/screenshots/data_diabetes_pipline.png)
 
