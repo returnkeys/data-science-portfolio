@@ -119,6 +119,7 @@ Applicable beyond climate science → **insurance, finance, risk scoring, fraud/
 ## 🎤 Conferences & Publications
 - **Conference Presentation:**  
   *EGU 2025* — *Assessing the skill of Copernicus seasonal forecast systems in predicting temperature and precipitation anomalies in the Alpine region*  
+  
 
 - **Publication:**  
   *Springer Nature – Climate Dynamics* (final preparation phase)  
