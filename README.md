@@ -14,9 +14,7 @@ To project contents you can click on the project names.
   - [sphere-pipeline](https://returnkeys.github.io/data-science-portfolio/projects/sphere-pipeline/) → Seasonal Forecast Evaluation Pipeline (Sphere EU project)  
   - [Fraud Detection (Google Cloud ML)](https://returnkeys.github.io/data-science-portfolio/projects/fraud-detection-ml/) → Financial transaction anomaly detection with BigQuery ML, TensorFlow, and explainable AI
   - [ml-experiments](https://returnkeys.github.io/data-science-portfolio/projects/ml-experiments/) → Machine learning experiments  
-  - [google-cloud-ml](https://returnkeys.github.io/data-science-portfolio/courses/google-cloud-ml/) → Google Cloud ML specialization (fraud detection)  
   - [azure-ml](https://returnkeys.github.io/data-science-portfolio/projects/azure-ml/) → Azure ML course labs & experiments  
-  - `sql-bolt` → SQLBolt structured lessons  
 
 - **assets/** → Diagrams, images, figures used in portfolio  
 
@@ -25,5 +23,4 @@ To project contents you can click on the project names.
 ## 📬 Contact  
 - LinkedIn: [Esmaeil Pourjavad](https://www.linkedin.com/in/esmaeil-pourjavad-091b861b3)  
 - GitHub: [returnkeys](https://github.com/returnkeys)  
-✅ Remote fixed test
-✅ Remote fixed test
+
