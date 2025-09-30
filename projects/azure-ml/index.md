@@ -1,124 +1,80 @@
 # ☁️ Azure Machine Learning — Practical Work
 
-I built, ran, and iterated complete ML workflows on Microsoft Azure using **Designer** and the **SDK v2**.  
-This work was developed as part of the **Microsoft Azure Machine Learning for Data Scientists** (Microsoft) learning track, which thoroughly covers the essentials from workspace setup to data assets, training pipelines, model registry, deployment to online endpoints, and light monitoring.  
-I extended the material with my own experiments on real datasets and additional MLOps practices.
-
+I worked in an **Azure ML workspace** (with preconfigured storage and compute) to build and run machine learning pipelines.  
+Pipelines were primarily created using the **Azure ML Designer** interface, for data preparation, training, and evaluation.  
+This work was part of my self-study in the **Microsoft Azure Machine Learning for Data Scientists** learning path, which introduced the essentials of Azure ML workflows.
 
 ---
 
 ## 🔧 Environment & Resources
 
-I provisioned a dedicated **resource group** and **Azure ML workspace**, backed by blob storage and a CPU cluster for training/inference.  
-Workloads were authored as Designer graphs (for clarity) and as SDK jobs (for automation & CI readiness).
-
-**Key factors**
-- Workspace, compute cluster, and datastores configured for repeatable runs  
-- Data registered as **Data assets** (versioned URIs/folders)  
-- Jobs tracked in **Experiments**; models promoted to the **Model Registry**  
-- Optional online endpoints created for real-time scoring
+- created an **workspace**, with blob storage and a CPU cluster for training/inference.  
+- Pipelines were authored in **Azure ML Designer**, focusing on clarity and reproducibility.  
+- Runs were tracked in **Experiments**, with metrics and outputs stored automatically.  
 
 ---
 
 ## 📚 Datasets
 
-I used three tabular datasets to exercise supervised and unsupervised workflows.  
-Each dataset was registered as a **Data asset** and referenced across experiments.
+Three tabular datasets were used to practice supervised and unsupervised workflows.  
+Each dataset was uploaded and referenced in multiple experiments.  
 
-**Key factors**
-- **Automobile price** (regression): numeric `price` target; mixed numeric/categorical features 
-- **Diabetes** (classification): binary outcome; standard medical predictors [source](https://raw.githubusercontent.com/MicrosoftDocs/ml-basics/refs/heads/master/data/diabetes.csv)
-- **Penguins** (clustering): unlabeled data to validate segmentation with K-Means [source](https://raw.githubusercontent.com/MicrosoftDocs/ml-basics/master/data/penguins.csv)  
-- Stored in `workspaceblobstore` under organized paths for pipeline reuse
+- **Automobile price** (regression): predicting numeric price from mixed features.  
+- **Diabetes** (classification): predicting binary outcome with medical predictors.  
+- **Penguins** (clustering): unlabeled dataset segmented with K-Means.  
 
 ---
 
 ## 1) Regression — Automobile Price Prediction
 
-This workflow predicts vehicle price and publishes a scored output suitable for a simple REST endpoint.  
-The Designer graph captures the full lineage from ingestion to evaluation and web-service I/O.
+Predicted vehicle price using a tree-based regressor.  
+The pipeline captured the flow from ingestion to evaluation, with Web Service I/O blocks included for deployment readiness.
 
-**Key factors**
-- **Prep:** Convert/ingest → Select Columns → Transform/Normalize (handled outliers/scales)  
-- **Modeling:** tuned tree-based regressor as a strong baseline; AutoML used to cross-check  
-- **Evaluation:** RMSE/MAE/R² logged per run; comparisons drove feature selection refinements  
-- **Deployment:** Web Service Input/Output blocks integrated; endpoint validated with sample payloads  
-- **Ops:** artifacts saved with run IDs; best model version registered for promotion
+**Key steps**  
+- Preprocessing: select columns, normalize features.  
+- Modeling: tuned tree-based regressor; cross-checked with AutoML.  
+- Evaluation: RMSE/MAE/R² logged per run.  
 
 ---
 
 ## 2) Classification — Diabetes Risk
 
-This pipeline classifies risk and demonstrates threshold tuning for business-friendly precision/recall tradeoffs.  
-I iterated across several runs (including some failed→fixed) to document debugging and reproducibility.
+Built a classification pipeline to predict diabetes risk.  
+Several runs were performed, including debugging and reruns to ensure reproducibility.
 
-**Key factors**
-- **Prep:** Select Columns → Clean Missing → Normalize; categorical handling kept explicit  
-- **Modeling:** logistic/gradient-boosting candidates; threshold tuning to optimize **F1/AUC**  
-- **Evaluation:** AUC, F1, precision/recall logged; side-by-side run comparison in Jobs UI  
-- **Registry:** top performer registered with metadata (params, metrics, data version)  
-- **Handoff:** scoring schema + example requests prepared for integration tests
+**Key steps**  
+- Preprocessing: handle missing values, normalize, encode categorical features.  
+- Modeling: logistic regression and gradient boosting.  
+- Evaluation: AUC, F1, precision/recall logged and compared across runs.  
 
 ---
 
 ## 3) Clustering — Penguins (K-Means)
 
-This unsupervised workflow segments observations and validates cluster quality before downstream use.  
-I combined normalization, k-selection, and post-assignment inspection to ensure stable groupings.
+Segmented observations in an unsupervised setting to validate cluster structure.
 
-**Key factors**
-- **Prep:** Select Columns → Clean Missing → Normalize → Split for holdout checks  
-- **Modeling:** K-Means with **silhouette** scoring; elbow method for k pre-selection  
-- **Evaluation:** silhouette per k logged; cluster sizes and centroids exported  
-- **Usage:** assigned cluster labels persisted for profiling and feature enrichment
+**Key steps**  
+- Preprocessing: select columns, clean missing values, normalize.  
+- Modeling: K-Means with silhouette scoring; tested different k values.  
+- Evaluation: cluster sizes and centroids exported for profiling.  
 
 ---
 
-## 🤖 Automated ML — Baselines & HPO
+## 🤖 Automated ML — Baselines
 
-I ran AutoML for regression/classification to benchmark manual pipelines and explore hyperparameters.  
-Results informed model choice and exposed helpful preprocessing defaults.
+Ran AutoML experiments for regression and classification to compare with manual pipelines.
 
-**Key factors**
-- Limits on max trials/runtime; early stopping enabled  
-- Metrics (e.g., **AUC_weighted**, **RMSE**) compared to manual runs  
-- Best candidate promoted; parameters captured for later SDK replication
-
----
-
-## 🚀 Deployment & Inference
-
-Selected models were packaged for managed **online endpoints** and validated with sample requests.  
-This establishes a thin path from experimentation to consumption by services or dashboards.
-
-**Key factors**
-- Reproducible environment (pinned base images/deps)  
-- Request/response JSON samples; latency & health checks recorded  
-- Roll-forward/rollback ready via model versioning in registry
+**Key steps**  
+- Benchmarked metrics such as AUC and RMSE.  
+- Reviewed preprocessing defaults suggested by AutoML.  
+- Used results to guide manual pipeline adjustments.  
 
 ---
 
-## 📈 Tracking, Versioning, Reproducibility
+## 📈 Tracking & Reproducibility
 
-Every run stores metrics, parameters, and artifacts; failed runs are preserved for auditability.  
-Models and datasets are versioned to ensure comparable, explainable outcomes.
-
-**Key factors**
-- Run history with comments/tags; **Compare** view for quick A/B checks  
-- Dataset URIs + model versions embedded in outputs for lineage  
-- Cleanup scripts to stop/scale down compute after experiments
-
----
-
-## 🔗 Orchestration Blueprint (Data Factory → Azure ML)
-
-For production, I drafted a simple ADF pipeline to schedule data ingestion and execute Azure ML training.  
-On success, the job registers a new model and—optionally after approval—updates the deployment.
-
-**Key factors**
-- Scheduled trigger → data validation → **Execute Azure ML job**  
-- Post-train: register model → gate → deploy/update endpoint  
-- Monitoring hook for drift/health; retrain on threshold breach
+Azure ML automatically logged metrics, parameters, and outputs for each run.  
+Failed runs were preserved, helping document the process and debugging steps.  
 
 ---
 

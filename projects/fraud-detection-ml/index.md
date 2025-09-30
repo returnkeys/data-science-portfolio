@@ -87,4 +87,3 @@ The evaluation metrics and curves below illustrate model performance:
 - Handling **imbalanced datasets** in fraud detection  
 - **Unsupervised anomaly detection** vs **supervised classification**  
 - Model benchmarking with AUC, precision/recall, and confusion matrices  
-- End-to-end ML pipeline deployment on **Google Cloud**  

@@ -27,11 +27,11 @@ providing **reproducible, automated, and scalable analytics** for decision-makin
 
 ### 1️⃣ Data Acquisition & Orchestration
 - Automated ingestion of multi-model forecast data via **API clients** (`cdsapi`)  
-- Batch workflows orchestrated with **Bash + Slurm** on HPC clusters  
+- Batch workflows orchestrated with **Bash + Slurm** on clusters  
 - Integrated validation, error handling, and logging  
 - Storage in standardized **NetCDF**  
 
-**Keywords:** ETL pipelines · workflow orchestration · API integration · HPC scaling  
+**Keywords:** ETL pipelines · workflow orchestration · API integration · data validation
 
 ---
 
@@ -41,7 +41,7 @@ providing **reproducible, automated, and scalable analytics** for decision-makin
 - Derived predictors (e.g., wind speed, anomalies)  
 - Baselines and anomaly features for ML models  
 
-**Keywords:** data wrangling · anomaly detection · feature engineering  
+**Keywords:** data wrangling · anomaly detection 
 
 ---
 
@@ -53,7 +53,7 @@ providing **reproducible, automated, and scalable analytics** for decision-makin
 
 Framework implemented in **Python (xarray, NumPy), R** for multi-model benchmarking.  
 
-**Keywords:** benchmarking · probabilistic forecasting · automated validation  
+**Keywords:** benchmarking · probabilistic forecasting 
 
 ---
 
@@ -118,7 +118,9 @@ Applicable beyond climate science → **insurance, finance, risk scoring, fraud/
 
 ## 🎤 Conferences & Publications
 - **Conference Presentation:**  
-  *EGU 2025* — *Assessing the skill of Copernicus seasonal forecast systems in predicting temperature and precipitation anomalies in the Alpine region*  
+  - **Conference Presentation:**  
+  [*EGU 2025* — *Assessing the skill of Copernicus seasonal forecast systems in predicting temperature and precipitation anomalies in the Alpine region*](https://meetingorganizer.copernicus.org/EGU25/EGU25-18212.html)
+
   
 
 - **Publication:**  
@@ -126,10 +128,4 @@ Applicable beyond climate science → **insurance, finance, risk scoring, fraud/
 
 ---
 
-## 🚀 Next Steps
-- **Deployment & Inference** → real-time monitoring of forecasts  
-- **Dashboards** → stakeholder-friendly interfaces  
-- **Knowledge Transfer** → performance bulletins & training  
-
-**Keywords:** deployment pipelines · real-time inference · stakeholder engagement
 

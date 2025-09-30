@@ -16,8 +16,6 @@ To project contents you can click on the project names.
   - [mlcourse-labs](https://returnkeys.github.io/data-science-portfolio/projects/mlcourse-labs/) → Machine learning experiments  
   - [azure-ml](https://returnkeys.github.io/data-science-portfolio/projects/azure-ml/) → Azure ML course labs & experiments  
 
-- **assets/** → Diagrams, images, figures used in portfolio  
-
 ---
 
 ## 📬 Contact  
