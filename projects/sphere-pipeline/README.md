@@ -69,7 +69,7 @@ Framework implemented in **Python (xarray, NumPy), R** for multi-model benchmark
 
 ## 📊 Tech Stack
 - **Languages:** Python, Bash  
-- **Libraries:** xarray · NumPy · pandas · matplotlib · skitlearn · seaborn · cartopy · cdsapi 
+- **Libraries:** xarray · NumPy · pandas · matplotlib · scikit-learn · seaborn · cartopy · cdsapi 
 - **Tools:** CDO (Climate Data Operators), Slurm (HPC orchestration)  
 - **Data:** Seasonal forecasts (ECMWF, CMCC, DWD, MF, UKMO) + ERA5 reanalysis  
 - **Environment:** Linux HPC cluster, NetCDF workflows  
