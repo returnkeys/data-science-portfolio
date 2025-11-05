@@ -6,7 +6,7 @@ title: "Sphere – Prediction Systems Evaluation Pipeline"
 # 🌍 Seasonal Forecast Models Evaluation Pipeline
 
 **Author:** Esmaeil Pourjavad  
-**Domain:** Data Science | Predictive Modeling | MLOps | Satellite Data  
+**Domain:** Data Science | Predictive Modeling | Satellite Data  
 
 ---
 
@@ -26,7 +26,7 @@ providing **reproducible, automated, and scalable analytics** for decision-makin
 ## ⚙️ Pipeline Components
 
 ### 1️⃣ Data Acquisition & Orchestration
-- Automated ingestion of multi-model forecast data via **API clients** (`cdsapi`)  
+- Automated ingestion of multi-model forecast data 
 - Batch workflows orchestrated with **Bash + Slurm** on clusters  
 - Integrated validation, error handling, and logging  
 - Storage in standardized **NetCDF**  
@@ -69,7 +69,7 @@ Framework implemented in **Python (xarray, NumPy), R** for multi-model benchmark
 
 ## 📊 Tech Stack
 - **Languages:** Python, Bash  
-- **Libraries:** xarray · NumPy · pandas · matplotlib · seaborn · cartopy · cdsapi  
+- **Libraries:** xarray · NumPy · pandas · matplotlib · scikit-learn · seaborn · cartopy · cdsapi  
 - **Tools:** CDO (Climate Data Operators), Slurm (HPC orchestration)  
 - **Data:** Seasonal forecasts (ECMWF, CMCC, DWD, MF, UKMO) + ERA5 reanalysis  
 - **Environment:** Linux HPC cluster, NetCDF workflows  
